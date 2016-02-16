@@ -150,14 +150,17 @@ body {
   margin-bottom: 80px;
 }
 
-.wrapper > section > article h1 {
-  text-align: center;
-  //color: #ffa640;
+.wrapper > section > article img {
+  width: 100%;
 }
 
-.wrapper > section > article > .content  p,
-.wrapper > section > article > .content  li,
-.wrapper > section > article  a {
+.wrapper > section > article h1 {
+  text-align: center;
+}
+
+.wrapper > section > article p,
+.wrapper > section > article li,
+.wrapper > section > article a {
   color: #7c705e;
   width: 100%;
   font-size: 14px;
