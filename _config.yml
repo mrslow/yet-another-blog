@@ -13,4 +13,4 @@ urls:
     - text: email
       url: mailto:animal2k@gmail.com
       class: mail
-baseurl: ''
+baseurl: '/yet-another-blog'
