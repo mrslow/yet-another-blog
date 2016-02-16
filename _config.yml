@@ -1,0 +1,16 @@
+name: Yet another programmers blog
+markdown: redcarpet
+highlighter: pygments
+github: https://www.github.com/mrslow
+about: I am developer from the Mother Russia.
+urls:
+    - text: bitbucket
+      url: https://bitbucket.org/jeff_haverlah/
+      class: bitbucket
+    - text: linkedin
+      url: https://ru.linkedin.com/in/shchetikhinae
+      class: linkedin
+    - text: email
+      url: mailto:animal2k@gmail.com
+      class: mail
+baseurl: ''

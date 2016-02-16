@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {% for post in posts %}
+    <article>
+    <div class="article-type
+      {% if post.category == 'development' %}
+        icon-dev
+      {% elif post.category == 'analytics' %}
+        icon-analytics
+      {% else %}
+        icon-testing
+      {% endif %}
+      ">
+      </div>
+      <h1>{{post.header | safe}}</h1>
+      <div class="article-content">
+        <p>{{post.body | safe}}</p>
+      </div>
+      <div class="article-date">{{post.created_at.strftime("%B, %d, %Y") | safe}}</div>
+    </article>
+  {% endfor %}
+  <button class="more-post" data-posts-count="{{ posts_count }}">Посмотреть еще работы</button>
+{% endblock %}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>{% if page.title %} {{ page.title }} {% else %} {{ site.name }} {% endif %}</title>
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href='{{ site.baseurl }}/css/normalize.css'>
+        <link rel="stylesheet" href='{{ site.baseurl }}/css/fontello.css'>
+        <link rel="stylesheet" href='{{ site.baseurl }}/css/fontello-ie7.css'>
+        <link rel="stylesheet" href='{{ site.baseurl }}/css/main.css'>
+
+        <!--[if lt IE 9]>
+        <script src='{{ site.baseurl }}/js/vendor/html5-3.6-respond-1.1.0.min.js'></script>
+        <![endif]-->
+    </head>
+    <body>
+    	<!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+		<div class="wrapper">
+
+            <aside>
+                <h1>{{ site.name }}</h1>
+                <div class="photo">
+                    <img src='{{ site.baseurl }}/img/logo.jpg' alt="creator photo">
+                </div>
+                {% if site.urls %}
+                <div id="links">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a class="icon-home" href="{{ site.baseurl }}/"></a></li>
+                        {% for i in site.urls %}
+                            <li><a class="icon-{{ i.class }}" href="{{ i.url }}" target="_blank"></a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+				{% if site.about %}
+				<div id="about">
+					<h4>About</h4>
+                    <p>{{ site.about }}</p>
+				</div>
+				{% endif %}
+          	</aside>
+			<section> 
+            	<article>
+            		{{ content }}
+            		<footer>
+						&copy; {{ site.name }}
+						{% if site.github %} 
+							- <a href="{{ site.github }}">{{ site.github }}</a>
+						{% endif %}
+					</footer>
+              	</article>
+          	</section>		
+		</div>
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
+        <script>window.jQuery || document.write('<script src="{{ site.baseurl }}/js/vendor/jquery-1.11.0.js"><\/script>')</script>
+    </body>
+</html>

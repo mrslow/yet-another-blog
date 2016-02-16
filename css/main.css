@@ -1,0 +1,350 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1rem 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browsehappy {
+    margin: 0.2rem 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2rem 0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-size: 1.6rem;
+    background-color: #efedea;
+}
+
+.wrapper {
+    width: 100%;
+    padding: 40px 0;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.wrapper > aside {
+  width: 200px;
+  position: fixed;
+  float: left;
+}
+
+.wrapper > aside > .photo {
+  height: 200px;
+  width: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.wrapper > aside  h1 {
+    display: none;
+}
+
+.wrapper > aside  ul {
+    list-style-type: none;
+    width: 200px;
+    font-size: 1px;
+    font-size: 0.1rem;
+    line-height: 0;
+    text-align: justify;
+    margin: 0 auto;
+    position: relative;
+    padding: 0;
+}
+
+.wrapper > aside  ul::after {
+    content: " ";
+    display: inline-block;
+    font-size: 0;
+    width: 100%;
+}
+
+.wrapper > aside  ul > li {
+    line-height: 50px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    display: inline-block;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.wrapper > aside  ul > li > a {
+    color: #7c705e;
+    text-decoration: none;
+}
+
+.wrapper > aside  ul > li > a:hover {
+    color: #000;
+}
+
+.wrapper > section {
+  width: 75%;
+  float: right;
+}
+
+.wrapper > section > article {
+  background-color: #fff;
+  position: relative;
+  padding: 40px;
+  margin-bottom: 80px;
+}
+
+.wrapper > section > article h1 {
+  text-align: center;
+  //color: #ffa640;
+}
+
+.wrapper > section > article > .content  p,
+.wrapper > section > article > .content  li,
+.wrapper > section > article  a {
+  color: #7c705e;
+  width: 100%;
+  font-size: 14px;
+  font-size: 1.4rem;
+  margin: 1rem 0;
+}
+
+.wrapper > section > article  a:hover {
+  text-decoration: none;
+}
+
+.wrapper > section > article > .time {
+  font-size: 12px;
+  font-size: 1.2rem;
+  color: #ada393;
+}
+
+aside, section, article {
+  height: auto;
+  position: relative;
+  vertical-align: top;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media (min-width: 1080px) {
+    .wrapper {
+        max-width: 960px;
+        margin: 0 auto;
+        position: relative;
+    }
+}
+
+@media (max-width: 1080px) {
+    .wrapper {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .wrapper > aside,
+    .wrapper > section {
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+
+    .wrapper > aside > .photo {
+        display: none;
+    }
+
+    .wrapper > aside  h1,
+    .wrapper > aside  h4,
+    .wrapper > aside  p {
+        display: block;
+        text-align: center;
+    }
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
